@@ -14,4 +14,7 @@ if (eta < 18) {
 } else if (eta >= 65 ) {
     prezzo = (km * 0.21) / 100 * 60;
 }
-console.log(prezzo);
+
+document.getElementById('km').innerHTML += km;
+document.getElementById('eta').innerHTML += eta;
+document.getElementById('generated-price').innerHTML = prezzo + ' €';

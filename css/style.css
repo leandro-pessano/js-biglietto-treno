@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1A1D21;
+}
+
+.clearfix::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.container {
+  margin: auto;
+  height: 100vh;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  color: #D1D2D3;
+}
+
+.tariffario {
+  margin: 60px 0 20px 60px;
+  width: 100%;
+}
+
+.tariffario h1 {
+  width: 140px;
+  border-bottom: 1px solid #3B3E41;
+}
+
+.tariffario ul {
+  padding-top: 10px;
+  list-style: none;
+}
+
+.tariffario ul li {
+  line-height: 1.6;
+}
+
+.tariffa #km ,
+.tariffa #eta {
+  padding-left: 20px;
+  line-height: 1.6
+}
+
+#generated {
+  margin: 15px;
+  height: 20px;
+  text-align: left;
+  background-color: #3B3E41;
+  color: #ABCDBC;
+  border: 1px solid #ABCDBC;
+}
+
+#generated p {
+  margin-right: 20px;
+  float: left;
+  display: inline-block;
+  user-select: none;
+}
+
+#generated span {
+  float: right;
+  font-weight: bold;
+  color: white;
+}
