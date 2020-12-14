@@ -17,4 +17,4 @@ if (eta < 18) {
 
 document.getElementById('km').innerHTML += km;
 document.getElementById('eta').innerHTML += eta;
-document.getElementById('generated-price').innerHTML = prezzo + ' €';
+document.getElementById('generated-price').innerHTML = prezzo.toFixed(2) + ' €';
