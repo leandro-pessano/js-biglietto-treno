@@ -9,4 +9,9 @@ var km, eta, prezzo;
 km = parseInt(prompt('Inserire numero chilometri'));
 eta = parseInt(prompt('Inserire età'));
 prezzo = km * 0.21;
+if (eta < 18) {
+  prezzo = (km * 0.21) / 100 * 80;
+} else if (eta >= 65 ) {
+    prezzo = (km * 0.21) / 100 * 60;
+}
 console.log(prezzo);
